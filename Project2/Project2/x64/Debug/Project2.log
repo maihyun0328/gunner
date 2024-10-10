@@ -1,9 +1,7 @@
 ﻿  main.c
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(34,12): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(105,18): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(106,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(198,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(209,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(101,6): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(100,6): warning C4101: 'count' :참조되지 않은 지역 변수입니다.
+\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(36,12): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(112,18): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(113,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(233,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(108,6): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
   Project2.vcxproj -> \\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\x64\Debug\Project2.exe

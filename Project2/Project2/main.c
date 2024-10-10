@@ -23,6 +23,8 @@ typedef struct bullet {
 int ch[2][2];
 Enemy eArr[100];
 Bullet bArr[100];
+int moving = 1000;
+int Moving = 0;
 
 void gotoxy(int x, int y, char* z) {              //원하는 위치에 텍스트 쓰는 함수
 	COORD coord = { 2 * x, y };
@@ -34,7 +36,7 @@ void summon(int idx) {
 	srand(time(NULL));
 	eArr[idx].x = rand() % 24 + 1;
 	eArr[idx].y = rand() % 19 + 1;
-	gotoxy(eArr[idx].x, eArr[idx].y, "1 ");
+	gotoxy(eArr[idx].x, eArr[idx].y, "⊙ ");
 	eArr[idx].isAlive = 1;
 }
 
@@ -97,7 +99,12 @@ int main(void) {
 
 void start(void) {
 	int m;
-	int count;
+	int hx = 35;
+	int hearts = 5;
+	int count[2];
+	for (int i = 0; i < 2; i++) {
+		count[i] = 0;
+	}
 	int b;
 	int timer[4];
 	int cur[4];
@@ -105,6 +112,7 @@ void start(void) {
 		timer[i] = time(NULL);
 		cur[i] = time(NULL);
 	}
+	timer[1] = GetTickCount();
 	int a = 0;
 	int dir = 2;
 	ch[0][0] = 12;
@@ -118,8 +126,27 @@ void start(void) {
 		bArr[i].isAlive = 0;
 		bArr[i].dir = 0;
 	}
-	gotoxy(ch[0][0], ch[0][1], "■");
+	gotoxy(ch[0][0], ch[0][1], "");
 	while (1) {
+		count[1] += 1;
+		for (int i = 0; i < 100; i++) {
+			if (ch[0][0] == eArr[i].x && ch[0][1] == eArr[i].y) {
+				if (count[1] > 1000) {
+					count[1] = 0;
+					hearts -= 1;
+				}
+			}
+		}
+		if (hearts <= 4) {
+			for (int i = 8; i >= hearts * 2; i -= 2) {
+				gotoxy(hx + i, 20, "□");
+			}
+		}
+		gotoxy(31, 20, "heart : ");
+		for (int i = 0; i < hearts * 2; i += 2) {
+			gotoxy(hx + i, 20, "■");
+		}
+		count[0] += 1;
 		if (_kbhit())
 		{
 			do
@@ -164,6 +191,8 @@ void start(void) {
 					}
 				}
 				break;
+			case 46:
+				;
 			}
 			gotoxy(ch[0][0], ch[0][1], "■");
 			if (a != 32) {
@@ -172,26 +201,32 @@ void start(void) {
 			}
 		}
 		for (int i = 0; i < 100; i++) {
+			if (eArr[i].x == bArr[i].x && eArr[i].y == bArr[i].y) {
+				eArr[i].isAlive = 0;
+			}
 			if (bArr[i].isAlive == 1) {
-				//gotoxy(bArr[i].x, bArr[i].y, "  ");
-				gotoxy(ch[0][0], ch[0][1], "■");
-				if (bArr[i].dir == 0) {
-					bArr[i].y -= 1;
-				}
-				else if (bArr[i].dir == 1) {
-					bArr[i].x += 1;
-				}
-				else if (bArr[i].dir == 2) {
-					bArr[i].y += 1;
-				}
-				else if (bArr[i].dir == 3) {
-					bArr[i].x -= 1;
-				}
-				if (bArr[i].x > 0 && bArr[i].y > 0 && bArr[i].x < 25 && bArr[i].y < 20) {
-					gotoxy(bArr[i].x, bArr[i].y, "○");
-				}
-				else {
-					bArr[i].isAlive = 0;
+				if (count[0] >= 800) {
+					count[0] = 0;
+					gotoxy(bArr[i].x, bArr[i].y, "  ");
+					gotoxy(ch[0][0], ch[0][1], "■");
+					if (bArr[i].dir == 0) {
+						bArr[i].y -= 1;
+					}
+					else if (bArr[i].dir == 1) {
+						bArr[i].x += 1;
+					}
+					else if (bArr[i].dir == 2) {
+						bArr[i].y += 1;
+					}
+					else if (bArr[i].dir == 3) {
+						bArr[i].x -= 1;
+					}
+					if (bArr[i].x > 0 && bArr[i].y > 0 && bArr[i].x < 25 && bArr[i].y < 20) {
+						gotoxy(bArr[i].x, bArr[i].y, "○");
+					}
+					else {
+						bArr[i].isAlive = 0;
+					}
 				}
 			}
 		}
@@ -206,8 +241,8 @@ void start(void) {
 				}
 			}
 		}
-		cur[1] = time(NULL);
-		if (cur[1] - timer[1] >= 1) {
+		cur[1] = GetTickCount();
+		if (cur[1] - timer[1] >= moving) {
 			timer[1] = cur[1];
 			for (int i = 0; i < 100; i++) {
 				if (eArr[i].isAlive == 1) {
