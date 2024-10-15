@@ -1,7 +1,13 @@
 ﻿  main.c
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(36,12): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(112,18): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(113,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(233,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-\\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\Project2\main.c(108,6): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
-  Project2.vcxproj -> \\DESKTOP-IRE4V45\학생들데이터(공유폴더)new\2.학생 저장자료(폴더안에 넣어서 저장할것, 다른 학생들 자료 삭제 절대 금물)\모재현\Project2\x64\Debug\Project2.exe
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(40,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(121,6): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(153,14): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(154,12): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(155,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(181,10): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(214,16): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(380,12): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(150,13): warning C4244: '초기화 중': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(151,14): warning C4244: '초기화 중': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\모재현\Desktop\코딩 자료\Project2\Project2\main.c(147,6): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
+  Project2.vcxproj -> C:\Users\모재현\Desktop\코딩 자료\Project2\x64\Debug\Project2.exe
